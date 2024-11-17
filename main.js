@@ -107,28 +107,19 @@ console.log("________________");
 console.log("");
 
 /*texto.replace(/\s+/g, ''): Esta expresión regular elimina todos los espacios en el texto.
-.toLowerCase(): Convierte el texto a minúsculass.
+.toLowerCase(): Convierte el texto a minúsculas.
 texto.split('').reverse().join(''): Convierte el texto en un array de caracteres, lo invierte y luego lo une de nuevo a una cadena.
 texto === ...: Compara el texto original (modificado) con su versión revertida.*/
 
 ejercicio5="///////////////5. Crear un programa para convertir la edad de un perro a años humanos///////////////";
  console.log(ejercicio5); 
  
-// Función para convertir la edad de un perro
-/*function edadCanina(edadHumana) {
-    const edadPerro = edadHumana * 7;
-    console.log(`Si la edad de tu perro es ${edadHumana}, tu perro tiene ${edadPerro} años humanos`);
-}
-edadCanina(7); // Tu perro tiene 49 años humanos
-edadCanina(3); // Tu perro tiene 21 años humanos
-edadCanina(10); // Tu perro tiene 70 años humanos
-console.log("________________");*/
-
+ 
 function calcularEdadCanina() {
     // Declarar una variable para la edad canina
     var edadCanina;
 
-    // Bucle para solicitar un número válido
+    // Bucle para solicitar un número válido, por si ingresan algo distinto a número
     do {
         // Solicitar la edad humana al usuario
         edadCanina = prompt("Introduce la edad de tu perro:");
